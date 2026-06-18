@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Bouquet Bunga</title>
+    <link rel="stylesheet" href="templatemo-amber-folio.css">
+<!--
+
+TemplateMo 615 Amber Folio
+https://templatemo.com/tm-615-amber-folio
+
+Konten diubah menjadi katalog bouquet bunga.
+
+-->
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+
+    <header id="header">
+        <nav>
+            <a href="#home" class="logo">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z"/>
+                </svg>
+                Bloom Bouquet
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#portfolio">Katalog</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#services">Paket</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="login-area">
+                <p id="userInfo">Belum login</p>
+                <div id="authArea">
+                    <button onclick="goLogin()" class="nav-cta">Login</button>
+                </div>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-shapes">
+            <div class="floating-accent accent-1"></div>
+            <div class="floating-accent accent-2"></div>
+            <div class="floating-accent accent-3"></div>
+        </div>
+        <div class="hero-content reveal">
+            <h1 class="hero-title">Katalog Bouquet Bunga</h1>
+            <p class="hero-subtitle">Pilihan bouquet cantik untuk wisuda, ulang tahun, anniversary, dan hadiah spesial.</p>
+            <a href="#portfolio" class="cta-button">Lihat Katalog</a>
+        </div>
+    </section>
+
+    <section class="portfolio-section" id="portfolio">
+        <div class="section-header reveal">
+            <h2 class="section-title">Pilihan Bouquet</h2>
+            <p class="section-subtitle">Rangkaian bunga segar dengan desain elegan dan harga terjangkau.</p>
+        </div>
+
+        <div class="coverflow-wrapper">
+            <div class="coverflow-container" id="coverflowContainer">
+                <div class="coverflow-item" data-index="0">
+                    <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=900&q=80" alt="Bouquet mawar merah" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Romantis</div>
+                        <h3 class="portfolio-title">Red Rose Bouquet</h3>
+                        <p class="portfolio-description">Mawar merah premium untuk hadiah romantis. Rp150.000</p>
+                    </div>
+                </div>
+
+                <div class="coverflow-item" data-index="1">
+                    <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=900&q=80" alt="Bouquet pink" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Manis</div>
+                        <h3 class="portfolio-title">Pink Sweet Bouquet</h3>
+                        <p class="portfolio-description">Nuansa pink lembut untuk ulang tahun. Rp135.000</p>
+                    </div>
+                </div>
+
+                <div class="coverflow-item" data-index="2">
+                    <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=80" alt="Bouquet sunflower" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Wisuda</div>
+                        <h3 class="portfolio-title">Sunflower Bouquet</h3>
+                        <p class="portfolio-description">Bouquet cerah untuk momen kelulusan. Rp120.000</p>
+                    </div>
+                </div>
+
+                <div class="coverflow-item" data-index="3">
+                    <img src="https://images.unsplash.com/photo-1487070183336-b863922373d4?auto=format&fit=crop&w=900&q=80" alt="Bouquet putih" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Elegan</div>
+                        <h3 class="portfolio-title">White Elegant</h3>
+                        <p class="portfolio-description">Bunga putih minimalis untuk acara formal. Rp165.000</p>
+                    </div>
+                </div>
+
+                <div class="coverflow-item" data-index="4">
+                    <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?auto=format&fit=crop&w=900&q=80" alt="Bouquet campuran" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Premium</div>
+                        <h3 class="portfolio-title">Garden Mix</h3>
+                        <p class="portfolio-description">Kombinasi bunga segar dengan kartu ucapan. Rp190.000</p>
+                    </div>
+                </div>
+
+                <div class="coverflow-item" data-index="5">
+                    <img src="https://images.unsplash.com/photo-1455656678494-4d1b5f3e7ad4?auto=format&fit=crop&w=900&q=80" alt="Bouquet romantis" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Anniversary</div>
+                        <h3 class="portfolio-title">Love Letter</h3>
+                        <p class="portfolio-description">Rangkaian romantis untuk pasangan. Rp175.000</p>
+                    </div>
+                </div>
+
+                <div class="coverflow-item" data-index="6">
+                    <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=900&q=80" alt="Bouquet lily" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Fresh</div>
+                        <h3 class="portfolio-title">Lily Fresh</h3>
+                        <p class="portfolio-description">Lily segar dengan aroma lembut. Rp155.000</p>
+                    </div>
+                </div>
+
+                <div class="coverflow-item" data-index="7">
+                    <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=900&q=80" alt="Mini bouquet" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Mini</div>
+                        <h3 class="portfolio-title">Mini Bouquet</h3>
+                        <p class="portfolio-description">Ukuran kecil untuk hadiah sederhana. Rp85.000</p>
+                    </div>
+                </div>
+
+                <div class="coverflow-item" data-index="8">
+                    <img src="https://images.unsplash.com/photo-1487530903081-59e0e3331512?auto=format&fit=crop&w=900&q=80" alt="Custom bouquet" class="portfolio-image">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-category">Custom</div>
+                        <h3 class="portfolio-title">Request Bouquet</h3>
+                        <p class="portfolio-description">Bisa pilih warna, bunga, dan ucapan. Mulai Rp100.000</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="coverflow-controls">
+                <button class="control-btn" id="prevBtn">‹</button>
+                <button class="control-btn" id="playPauseBtn">▶</button>
+                <button class="control-btn" id="nextBtn">›</button>
+            </div>
+
+            <div class="indicators" id="indicators">
+                <div class="indicator active" data-index="0"></div>
+                <div class="indicator" data-index="1"></div>
+                <div class="indicator" data-index="2"></div>
+                <div class="indicator" data-index="3"></div>
+                <div class="indicator" data-index="4"></div>
+                <div class="indicator" data-index="5"></div>
+                <div class="indicator" data-index="6"></div>
+                <div class="indicator" data-index="7"></div>
+                <div class="indicator" data-index="8"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="about-container reveal">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1487530903081-59e0e3331512?auto=format&fit=crop&w=900&q=80" alt="Florist membuat bouquet">
+            </div>
+            <div class="about-content">
+                <h2>Tentang Bloom Bouquet</h2>
+                <p>Bloom Bouquet menyediakan katalog rangkaian bunga untuk berbagai acara. Setiap bouquet dibuat dengan bunga segar, pilihan warna menarik, dan kemasan yang rapi.</p>
+                <p>Pelanggan dapat memilih katalog yang tersedia atau memesan bouquet custom sesuai tema acara, warna favorit, dan kartu ucapan.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Pilihan</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24 Jam</div>
+                        <div class="stat-label">Preorder</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4.9</div>
+                        <div class="stat-label">Rating</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section" id="services">
+        <div class="services-container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Paket Bouquet</h2>
+                <p class="section-subtitle">Pilih paket sesuai kebutuhan hadiah dan acara.</p>
+            </div>
+
+            <div class="services-grid reveal">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z"/></svg>
+                    </div>
+                    <h3 class="service-title">Birthday Bouquet</h3>
+                    <p class="service-description">Bouquet warna cerah untuk ulang tahun, lengkap dengan kartu ucapan.</p>
+                    <div class="service-price">Mulai Rp100.000</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L15 8L22 9L17 14L18 21L12 17.8L6 21L7 14L2 9L9 8L12 2Z"/></svg>
+                    </div>
+                    <h3 class="service-title">Graduation Bouquet</h3>
+                    <p class="service-description">Rangkaian bunga untuk wisuda, bisa ditambah boneka atau uang mainan.</p>
+                    <div class="service-price">Mulai Rp120.000</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24"><path d="M20 6H16.8C16.4 4.8 15.3 4 14 4C13.2 4 12.5 4.3 12 4.8C11.5 4.3 10.8 4 10 4C8.7 4 7.6 4.8 7.2 6H4C2.9 6 2 6.9 2 8V20C2 21.1 2.9 22 4 22H20C21.1 22 22 21.1 22 20V8C22 6.9 21.1 6 20 6Z"/></svg>
+                    </div>
+                    <h3 class="service-title">Custom Bouquet</h3>
+                    <p class="service-description">Pilih warna bunga, wrapping, dan isi kartu ucapan sesuai request.</p>
+                    <div class="service-price">Custom Price</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="media-section" id="video">
+        <div class="section-header reveal">
+            <h2 class="section-title">Video dan Lokasi</h2>
+            <p class="section-subtitle">Bagian ini memenuhi kebutuhan iframe YouTube dan Google Maps.</p>
+        </div>
+        <div class="media-grid reveal">
+            <div class="media-card">
+                <h3>Video YouTube</h3>
+                <iframe src="https://www.youtube.com/embed/WkEpw5r_SjQ" title="Video YouTube bouquet" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="media-card">
+                <h3>Google Maps</h3>
+                <iframe src="https://www.google.com/maps?q=toko%20bunga%20jakarta&output=embed" title="Lokasi toko bunga" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container reveal">
+            <div class="section-header">
+                <h2 class="section-title">Pesan Bouquet</h2>
+                <p class="section-subtitle">Isi form berikut untuk melakukan pemesanan bouquet.</p>
+            </div>
+
+            <div class="contact-info">
+                <a href="tel:+6281234567890" class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.68 14.91 16.08 14.82 16.43 14.94C17.55 15.31 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.69 6.45 9.06 7.57C9.17 7.92 9.09 8.31 8.81 8.59L6.62 10.79Z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-label">Telepon</div>
+                    <div class="contact-value">+62 812-3456-7890</div>
+                </a>
+
+                <a href="mailto:bloombouquet@gmail.com" class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
+                        </svg>
+                    </div>
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">bloombouquet@gmail.com</div>
+                </a>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Nama</label>
+                        <input type="text" placeholder="Nama lengkap">
+                    </div>
+                    <div class="form-group">
+                        <label>No. WhatsApp</label>
+                        <input type="tel" placeholder="08xxxxxxxxxx">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Pilihan Bouquet</label>
+                    <input type="text" placeholder="Contoh: Sunflower Bouquet">
+                </div>
+                <div class="form-group">
+                    <label>Catatan Pesanan</label>
+                    <textarea rows="5" placeholder="Tulis warna, ucapan, dan tanggal pengiriman"></textarea>
+                </div>
+                <button type="button" class="submit-btn">Kirim Pesanan</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="templatemo-amber-script.js"></script>
+    <script src="login/js/welcome.js?v=2"></script>
+</body>
+</html>
