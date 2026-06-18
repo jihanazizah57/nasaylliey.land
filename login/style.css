@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Inter, Arial, sans-serif;
+    background:
+        linear-gradient(rgba(10, 10, 10, 0.72), rgba(10, 10, 10, 0.88)),
+        url("https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=1400&q=80") center/cover;
+    color: white;
+}
+
+.auth-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+}
+
+.auth-card {
+    width: min(430px, 100%);
+    background: rgba(12, 12, 12, 0.9);
+    border: 1px solid rgba(243, 156, 18, 0.28);
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.4);
+}
+
+.back-link,
+.helper a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.auth-card > p {
+    color: #d7d7d7;
+    margin-bottom: 26px;
+}
+
+form {
+    display: grid;
+    gap: 13px;
+}
+
+label {
+    font-weight: 700;
+}
+
+input {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 6px;
+    padding: 13px 14px;
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    outline: none;
+}
+
+input:focus {
+    border-color: #f39c12;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin-top: 8px;
+    background: #f39c12;
+    color: #111;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ffb23c;
+}
+
+.helper {
+    color: #d7d7d7;
+    margin-top: 18px;
+}
+
+#message {
+    background: #ff4e4e;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+#alertBox {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+.alert {
+    min-width: min(360px, calc(100vw - 32px));
+    padding: 14px 18px;
+    border-radius: 6px;
+    background: #ff4e4e;
+    color: white;
+    text-align: center;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
